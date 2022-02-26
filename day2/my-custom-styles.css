@@ -1,0 +1,24 @@
+.grogu {
+    color: teal;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+p.first {
+    color: #00ff00;
+}
+
+footer {
+    border: 1em solid black;
+    background-color: #0a58ca;
+    padding: 2em;
+}
+
+h2 {
+    border-bottom: 2px dashed #0077ff;
+    width: 433px;
+}
+
+.photo {
+    width: 433px;
+}
