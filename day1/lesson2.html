@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sample HTML Elements</title>
+</head>
+
+<body>
+<h1>Sample HTML Elements</h1>
+<p>This page describes the most commonly used HTML elements.</p>
+
+<h2>Text</h2>
+
+<h3>Paragraphs</h3>
+<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in
+    Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with
+    the necessary regelialia.</p>
+<p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing
+    has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
+    decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question
+    Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself
+    on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the
+    headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+
+<h3>Inline semantics</h3>
+<p>Here are some common formatting tags:</p>
+<ul>
+    <li><b>Bold</b></li>
+    <li><strong>Strong</strong></li>
+    <li><u>Underline</u></li>
+    <li><i>Italics</i></li>
+    <li><em>Emphasis</em></li>
+    <li><s>Strikethrough</s></li>
+    <li>Subscript<sub>12</sub></li>
+    <li>Superscript<sup>34</sup></li>
+    <li><a href="#">Link</a></li>
+</ul>
+
+<h3>Content</h3>
+<p>The following is a blockquote tag:</p>
+<blockquote>"It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."</blockquote>
+<p>The following is pre-formatted text:</p>
+<pre>
+    Whatever shows up in here, is
+      rendered exactly as shown.
+        Line breaks and other whitespace
+      are
+    preserved.
+
+    function square(int x): int
+    {
+      return x * x;
+    }
+
+</pre>
+<p>Note that a line can be broken without having to start a new paragraph using the <br>tag. See how that's different<br>from another paragraph? As shown below?</p>
+<p>A horizontal line can be added with the <code>&lt;hr&gt;</code> tag:</p>
+<p>This is <code>more code</code>. I hope you liked it.</p>
+
+<hr>
+<hr>
+<hr>
+<hr>
+
+<h3>Lists: Unordered</h3>
+<p>An unordered list shows bullets, without specifying ordinality:</p>
+<ul>
+    <li>Alligators All Around</li>
+    <li>Bursting Balloons</li>
+    <li>Catching Colds</li>
+    <li>Doing Dishes</li>
+    <li>A Fifth Item on this List</li>
+    <ul>
+        <li>Sub Item 1</li>
+        <li>Sub Item 2</li>
+        <li>Sub Item 3</li>
+    </ul>
+</ul>
+
+<h3>Lists: Ordered</h3>
+<p>An ordered list uses numbers:</p>
+<ol>
+    <li>Entertaining Elephants</li>
+    <li>Forever Fooling</li>
+    <li>Getting Giggles</li>
+    <li>Having Headaches</li>
+</ol>
+
+<h2>Tables</h2>
+<p>Data can be easily arranged in rows and columns</p>
+<table>
+    <tr>
+        <th>Planet</th>
+        <th>Distance from Sun (AU)</th>
+        <th>Day Length (hours)</th>
+        <th>Year Length (earth days)</th>
+    </tr>
+    <tr>
+        <td>Mercury</td>
+        <td>0.39</td>
+        <td>1,408</td>
+        <td>87.97</td>
+    </tr>
+    <tr>
+        <td>Venus</td>
+        <td>0.723</td>
+        <td>5,832</td>
+        <td>224.701</td>
+    </tr>
+    <tr>
+        <td>Earth</td>
+        <td>1</td>
+        <td>24</td>
+        <td>365.256</td>
+    </tr>
+    <tr>
+        <td>Mars</td>
+        <td>1.524</td>
+        <td>24.62</td>
+        <td>686.980</td>
+    </tr>
+    <tr>
+        <td>Jupiter</td>
+        <td>5.203</td>
+        <td>9.93</td>
+        <td>4,266.85</td>
+    </tr>
+    <tr>
+        <td>Saturn</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+    </tr>
+</table>
+
+<h2>Media</h2>
+<p>Images:</p>
+<img
+    src="https://www.charliehills.com/gallery/_data/i/upload/2022/02/04/20220204092313-cc5d18b9-me.jpg"
+    alt="A fake book cover that looks bad, designed for MyBizzyKitchen"
+>
+
+<p>IFrame:</p>
+<iframe src="index.html"></iframe>
+
+<p>Forms</p>
+<form>
+    <label>
+    First Name:
+    <input type="text" name="first_name"/>
+    </label>
+
+    <label>
+        Last Name:
+        <input type="text" name="last_name"/>
+    </label>
+
+    <label>
+        Pizza Topping:
+        <input type="text" name="pizza_topping"/>
+    </label>
+
+    <label>
+        Favorite Fruit:
+        <select>
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Candy</option>
+            <option>Donut</option>
+            <option>Elderberries?</option>
+            <option>Fig Newtons!</option>
+        </select>
+    </label>
+
+    <label>
+        Tell us about yourself:
+        <textarea>Type here.</textarea>
+    </label>
+
+    <button>Submit</button>
+</form>
+
+
+<!--p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and
+    feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the
+    exquisite sense of mere tranquil existence, that I neglect my talents.</p> <p>I should be incapable of drawing a single stroke at the present moment; and
+    yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the
+    upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the
+    tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the
+    little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the
+    Almighty, who formed us in his own image, and the breath
+</p>
+<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like
+    back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was
+    hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved
+    about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small,
+    lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman -
+    and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady
+    fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor
+    then turned to look out the window at the dull weather. Drops</p-->
+</body>
+<footer>
+    <p>Copyright &copy; 2022 by Monarch's Key Games</p>
+</footer>
+</html>
