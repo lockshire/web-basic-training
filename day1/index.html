@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Basic Web Development</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../day1/index.html">Day 1: HTML</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../day2/index.html">Day 2: CSS</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../day3/index.html">Day 3: JavaScript</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../day4/index.html">Day 4: JavaScript</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../day5/index.html">Day 5: JavaScript</a>
+        </div>
+    </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+        <!-- Top navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item active"><a class="nav-link" href="../home/index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container-fluid">
+            <h1 class="mt-4">HTML</h1>
+            <p>HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be
+                assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML
+                describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+            <p>HTML elements are the building blocks of HTML pages.</p>
+            <h2 class="mt-4">History</h2>
+            <ul>
+                <li><strong>1988</strong>. Physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents.</li>
+                <li><strong>1989</strong>. Berners-Lee wrote a memo proposing an Internet-based hypertext system.</li>
+                <li><strong>1990</strong>. Berners-Lee specified HTML and wrote the browser and server software. In his personal notes he listed "some of the many areas in which hypertext is used" and put an encyclopedia first.</li>
+                <li><strong>1991</strong>. The first publicly available description of HTML was a document called "HTML Tags".</li>
+            </ul>
+            <h2 class="mt-4">Markup</h2>
+            <p>"Markup" refers to any text that embeds information or instructions directly in the text. For example, if a word is meant to be bolded,
+                then "meta text" can be added to the word indicating it should be bolded. Some examples:</p>
+            <pre>
+                This is plain text. If this text is meant to be rendered by a process, then
+                we have to have the ability to embed instructions for the renderer to use.
+                For example, [begin-bold]making text bold[end-bold], or [begin-large]large
+                [end-large], or [begin-red]red[end-red]. In these cases the text enclosed
+                in square brackets is not meant to be [begin-italics]displayed[end-italics],
+                but [begin-italics]interpreted[end-italics].
+            </pre>
+            <p>Rendered:</p>
+            <p style="padding-left: 8.5em; padding-right: 28em; color: #333333">
+                This is plain text. If this text is meant to be rendered by a process, then
+                we have to have the ability to embed instructions for the renderer to use.
+                For example, <b>making text bold</b>, or <font size="5">large</font>, or
+                <font color="red">red</font>. In these cases the
+                text enclosed in square brackets is not meant to be <i>displayed</i>,
+                but <i>interpreted</i>.
+            </p>
+            <p><a href="https://cis.stvincent.edu/martincc/new/history.php">Click here</a> for a quick overview.</p>
+            <h2 class="mt-4">Hyper</h2>
+            <p>The "hyper" of "hypertext markup" simply describes the ability for one document to link to another document.</p>
+            <p>Before computers, if a text book needed to refer to another text book, all it could do was say "Go look at this other book."</p>
+            <p>However, computers gave us the ability to simply *click* and the other book would immediately appear on our screen.</p>
+            <h2 class="mt-4">Let's Begin</h2>
+            <p>In our first lesson, we'll cover the basics of HTML, where you'll learn the basic tags that define web documents.</p>
+            <p><a href="lesson1.html">Click here</a> to begin.</p>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+</body>
+</html>
