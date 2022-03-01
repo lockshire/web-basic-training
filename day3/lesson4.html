@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="myPageTitle">Won't See This TITLE Value</title>
+    </head>
+    <body>
+        <h1 id="myPageHeader">Won't See This H1 Value</h1>
+        <p>This page will dynamically update the heading above with a prompted value</p>
+        <hr>
+        <p><a href="index.html">Home</a> | <a href="lesson3.html">Back</a> | <a href="lesson5.html">Next</a></p>
+    </body>
+    <footer>
+        <script>
+            let num = 12;
+            num = 'Apple';
+            alert(num);
+            let message = prompt("Enter page title");
+            let title = document.getElementById("myPageTitle");
+            title.innerHTML = message;
+            let heading = document.getElementById("myPageHeader");
+            heading.innerHTML = message;
+        </script>
+    </footer>
+</html>
