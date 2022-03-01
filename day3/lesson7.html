@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adding Elements</title>
+    </head>
+    <body>
+        <h1>Adding Elements</h1>
+        <button onclick="addThreeFruit('Fig')">Add Fig</button>
+        <button onclick="addThreeFruit('Ghost Pepper')">Add Pepper</button>
+        <p>This page will dynamically update this list:</p>
+        <ul id="fruitList">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Candy</li>
+            <li>Donuts</li>
+            <li>Eeeegggghhhs</li>
+        </ul>
+        <hr>
+        <p><a href="index.html">Home</a> | <a href="lesson5.html">Back</a></p>
+    </body>
+    <footer>
+        <script>
+            let stop = false;
+            let counter = new Object();
+
+            function addFruitToFruitList(fruitName) {
+                var ul = document.getElementById("fruitList");
+                var li = document.createElement("li");
+
+                if (counter[fruitName] === undefined) {
+                    counter[fruitName] = 1;
+                }
+
+                if (!stop) {
+                    li.appendChild(document.createTextNode(fruitName + " " + counter[fruitName]));
+                    ul.appendChild(li);
+                }
+
+                if ((counter[fruitName] >= 18) && (!stop)) {
+                    alert("Stop it! Too much fruit!");
+                    stop = true;
+                }
+
+                counter[fruitName]++;
+            }
+
+            function addThreeFruit(fruitName) {
+                for (let i = 0; i < 3; i++) {
+                    addFruitToFruitList(fruitName);
+                }
+            }
+        </script>
+    </footer>
+</html>

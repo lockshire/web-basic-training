@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="myPageTitle">Won't See This TITLE Value</title>
+    </head>
+    <body>
+        <h1 id="myPageHeader">Won't See This H1 Value</h1>
+        <p>This page will dynamically update the heading above with a prompted value</p>
+        <hr>
+        <p><a href="index.html">Home</a> | <a href="lesson4.html">Back</a> | <a href="lesson6.html">Next</a></p>
+    </body>
+    <footer>
+        <script>
+            // let message = prompt("Enter page title");
+            let message = "New Page Title";
+            let title = document.getElementById("myPageTitle");
+            title.innerHTML = message;
+            let heading = document.getElementById("myPageHeader");
+            heading.innerHTML = message;
+
+            /*
+            let isBoss = confirm("Are you the boss?");
+            alert( isBoss ); // true if OK is pressed
+            */
+
+            let a = 12;
+            let b = prompt("Enter a value for B");
+            let bNum = parseInt(b);
+
+            if (a === bNum) {
+                alert("A and B(num) are the same");
+            } else {
+                alert("Not same!");
+            }
+
+            /*
+            if (a < b) {
+                alert("A is smol");
+            } else if (a > b) {
+                alert("B is smol");
+            } else {
+                alert("A and B are the same");
+            }
+
+            let fruit = 'apple';
+            let veggie = 'potato';
+            if (fruit == veggie) {
+                alert("What kind of fruit equals a veggie?");
+            } else {
+                alert("Makes sense!");
+            }
+            */
+        </script>
+    </footer>
+</html>

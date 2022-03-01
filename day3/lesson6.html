@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adding Elements</title>
+    </head>
+    <body>
+        <h1>Adding Elements</h1>
+        <button onclick="addThreeFruit('Fig')">Add Fig</button>
+        <button onclick="addThreeFruit('Ghost Pepper')">Add Pepper</button>
+        <p>This page will dynamically update this list:</p>
+        <ul id="fruitList">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Candy</li>
+            <li>Donuts</li>
+            <li>Eeeegggghhhs</li>
+        </ul>
+        <hr>
+        <p><a href="index.html">Home</a> | <a href="lesson5.html">Back</a></p>
+    </body>
+    <footer>
+        <script>
+            let stop = false;
+            let newButtonCounter = 1;
+            let newButtonCounter2 = 1;
+
+            function addFruitToFruitList(fruitName) {
+                var ul = document.getElementById("fruitList");
+                var li = document.createElement("li");
+
+                if (fruitName === 'Fig') {
+                    var counter = newButtonCounter;
+                } else if (fruitName === 'Ghost Pepper') {
+                    var counter = newButtonCounter2;
+                } else {
+                    // Unsupported fruit or something  :)
+                    var counter = 1;
+                }
+
+                if (!stop) {
+                    li.appendChild(document.createTextNode(fruitName + " " + counter));
+                    ul.appendChild(li);
+                }
+
+                if (fruitName === 'Fig') {
+                    newButtonCounter++;
+                } else if (fruitName === 'Ghost Pepper') {
+                    newButtonCounter2++;
+                } else {
+                }
+
+                if (((newButtonCounter > 18) || (newButtonCounter2 > 18)) && (!stop)) {
+                    alert("Stop it! Too much fruit!");
+                    stop = true;
+                }
+
+            }
+
+            function addThreeFruit(fruitName) {
+                for (let i = 0; i < 3; i++) {
+                    addFruitToFruitList(fruitName);
+                }
+            }
+        </script>
+    </footer>
+</html>
